@@ -85,4 +85,4 @@ object! So what should the this keyword look like in this situation?
 
 poll.displayResults.call({ answers: [5, 2, 3] }, "string");
 
-//! EK METHOD OBJECT KA TAB TAK HI HAI JAB TAK WOH USKE THROUGH CALL HO RAHA HAI,MATLAB . OPERATOR se, if i write const func=poll.displayResults, now func is a normal function with an undefined "this", thaats what normal fucntions get as "this".
+//! EK METHOD OBJECT KA TAB TAK HI HAI JAB TAK WOH USKE THROUGH CALL HO RAHA HAI,MATLAB . OPERATOR se, if i write const func=poll.displayResults, now func is a normal function with an undefined "this", thats what normal fucntions get as "this".

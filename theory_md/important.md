@@ -55,7 +55,7 @@ func1 = func.bind(poll);
 func1();
 
 //or
-document.addEventListner("click", poll.registerNewAnswer.bind(poll));
+document.addEventListener("click", poll.registerNewAnswer.bind(poll));
 ```
 
 Above code says, call the func on the poll object , so **this** is explicitly set to **poll**.

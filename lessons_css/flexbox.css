@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 80vh;
+  border: 8px solid black;
+  /* display: flex; */
+  /** lets make this container a flex container */
+  display: flex;
+  /** flex direction is used to change the main axis*/
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* align-content: center; */
+}
+
+.box {
+  font-size: 3.5rem;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-weight: 300;
+  /* width: 150px; */
+  /* margin: 0 10px;s */
+  /* font-weight: 600; */
+}
+
+.box-1 {
+  background: #e51400;
+  /* font-size: 1rem; */
+  flex-basis: 50%;
+}
+.box-2 {
+  background: #fa6800;
+  /* font-size: 2rem; */
+}
+.box-3 {
+  background: #f0a30a;
+  /* font-size: 1.5rem; */
+  /* align-self: flex-start; */
+}
+.box-4 {
+  background: #e3c800;
+  /* font-size: 3rem; */
+}
+.box-5 {
+  background: #a4c400;
+}
+.box-6 {
+  background: #60a917;
+}
+.box-7 {
+  background: #00aba9;
+}
+.box-8 {
+  background: #1ba1e2;
+}
+.box-9 {
+  background: #aa00ff;
+}
