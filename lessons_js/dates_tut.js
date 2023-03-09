@@ -75,3 +75,17 @@ console.log(Date.now());
 console.log(new Date(Date.now()));
 
 future.setSeconds(23);
+
+//* operations on dates.
+
+const daysDiff = (date1, date2) => Math.abs(date1.getTime() - date2.getTime());
+const daysDiffEasier = (date1, date2) => Math.abs(date1 - date2);
+//! both of the above functions return the milliseconds passed.
+
+console.log(
+  daysDiff(new Date(2002, 1, 1), new Date(2002, 1, 11)) / (24 * 60 * 60 * 1000)
+);
+console.log(
+  daysDiffEasier(new Date(2002, 1, 1), new Date(2002, 1, 2)) /
+    (24 * 3600 * 1000)
+);
