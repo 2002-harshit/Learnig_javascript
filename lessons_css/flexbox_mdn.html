@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: purple;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+        /* flex: 200px; */
+        flex: 1 200px;
+      }
+      article:nth-of-type(3) {
+        flex: 2 200px;
+        /* Each flex item will first be given 200px of the available space. After that, the rest of the available space will be shared according to the proportion units */0
+        /* The 200px is the flex-basis, 2 is the flex-grow*/
+      }
+      section {
+        display: flex;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        /*
+        * we have a shorthand for flex-direction and flex-wrap that is flex-flow */
+        flex-flow: row wrap;
+      }
+
+      /* Add your flexbox CSS below here */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+
+    <section>
+      <article>
+        <h2>First article</h2>
+
+        <p>
+          Tacos actually microdosing, pour-over semiotics banjo chicharrones
+          retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B
+          pork belly, everyday carry ennui pickled sriracha normcore hashtag
+          polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund
+          twee, leggings salvia iPhone photo booth health goth gastropub
+          hammock.
+        </p>
+      </article>
+
+      <article>
+        <h2>Second article</h2>
+
+        <p>
+          Tacos actually microdosing, pour-over semiotics banjo chicharrones
+          retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B
+          pork belly, everyday carry ennui pickled sriracha normcore hashtag
+          polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund
+          twee, leggings salvia iPhone photo booth health goth gastropub
+          hammock.
+        </p>
+      </article>
+
+      <article>
+        <h2>Third article</h2>
+
+        <p>
+          Tacos actually microdosing, pour-over semiotics banjo chicharrones
+          retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B
+          pork belly, everyday carry ennui pickled sriracha normcore hashtag
+          polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund
+          twee, leggings salvia iPhone photo booth health goth gastropub
+          hammock.
+        </p>
+
+        <p>
+          Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat
+          ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers
+          pickled, asymmetrical kombucha letterpress kitsch leggings
+          cold-pressed squid chartreuse put a bird on it. Listicle pickled man
+          bun cornhole heirloom art party.
+        </p>
+      </article>
+    </section>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox align 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 70%;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      button {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 15%;
+      }
+
+      div {
+        height: 100px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      /* Add your flexbox CSS below here */
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Smile</button>
+      <button>Laugh</button>
+      <button>Wink</button>
+      <button>Shrug</button>
+      <button>Blush</button>
+    </div>
+  </body>
+</html>

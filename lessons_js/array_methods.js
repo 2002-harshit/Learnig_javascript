@@ -74,7 +74,7 @@ console.log(newArr.flat());
 //* it as the name suggests , flattens out the array into a 1d array.
 const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
 console.log(arrDeep.flat());
-//! the expected output should eb a single 1d array, but thr actual output is [ [ 1, 2 ], 3, 4, [ 5, 6 ], 7, 8 ], we observe that it only flattened the first level of nesting!!!!!!!!, which is the default value.
+//! the expected output should be a single 1d array, but thr actual output is [ [ 1, 2 ], 3, 4, [ 5, 6 ], 7, 8 ], we observe that it only flattened the first level of nesting!!!!!!!!, which is the default value.
 //* in order to get the desired result, we have tok go till 2nd level.
 console.log(arrDeep.flat(2));
 

@@ -1,0 +1,146 @@
+<!-- <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSS Grid starting point</title>
+    <style>
+      body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+      }
+
+      .container {
+        border: 2px solid black;
+        display: grid;
+        /* Declaring display: grid gives you a one column grid, so your items will continue to display one below the other as they do in normal flow. */
+        /* grid-template-columns: 200px 200px 200px; */
+
+        /*we create 3 columns of 200px each we can use percentages or any length unit also, but lets use flexible sizing using fr*/
+
+        /* You can mix fr units with fixed length units — in such a case the space needed for the fixed tracks is used up first; the remaining space is then distributed to the other tracks. */
+
+        /* Note: The fr unit distributes available space, not all space. Therefore, if one of your tracks has something large inside it, there will be less free space to share, tracks are columns */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        gap: 20px;
+        /* fr unit is not allowed in gaps */
+
+        /* grid-auto-rows: 100px; */
+        /* specifies the size(height) of the implicitly created rows, but this can cause a problem if the content is more than 100px*/
+        grid-auto-rows: minmax(100px, auto);
+        /* if more content comes, the expansion will happen in the whole row. */
+
+        /*NOW LETS TELL THE GRID TO CREATE AS MANY COLUMNS AS WILL FIT*/
+        /* grid-template-columns: repeat(auto-fill, 200px); */
+        /* th above will create as many columns of 200px as will fit */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+        /* This works because grid is creating as many 200-pixel columns as will fit into the container, then sharing whatever space is leftover among all the columns. The maximum is 1fr which, as we already know, distributes space evenly between tracks. */
+      }
+
+      .container > div {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+      <div>Seven</div>
+    </div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSS Grid - line-based placement starting point</title>
+    <style>
+      body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+      }
+
+      header,
+      footer {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+      }
+
+      aside {
+        border-right: 1px solid #999;
+      }
+      header {
+        /* grid-column: 1/3; */
+        /* grid-row: 1; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>This is my lovely blog</header>
+      <article>
+        <h1>My article</h1>
+        <p>
+          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
+          porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+          auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
+          orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
+          ornare ex malesuada et. In vitae convallis lacus. Aliquam erat
+          volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin
+          eros pharetra congue. Duis ornare egestas augue ut luctus. Proin
+          blandit quam nec lacus varius commodo et a urna. Ut id ornare felis,
+          eget fermentum sapien.
+        </p>
+
+        <p>
+          Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
+          malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
+          facilisis sed est. Nam id risus quis ante semper consectetur eget
+          aliquam lorem. Vivamus tristique elit dolor, sed pretium metus
+          suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu
+          urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt
+          eget purus in interdum. Cum sociis natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus.
+        </p>
+      </article>
+      <aside>
+        <h2>Other things</h2>
+        <p>
+          Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
+          malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
+          facilisis sed est.
+        </p>
+      </aside>
+      <footer>Contact me@mysite.com</footer>
+    </div>
+  </body>
+</html>

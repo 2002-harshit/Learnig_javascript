@@ -48,7 +48,7 @@ console.log(
     useGrouping: true,
   }).format(speed)
 );
-//! it is worthy noting that currency is not applied form the locale string!!!!!!,you have to manually give it.
+//! it is worthy noting that currency is not applied from the locale string!!!!!!,you have to manually give it.
 
 //* also there are 3 styles that are, unit, currency, percentage.
 //* useGrouping determines whether to show separators between numbers or not.
