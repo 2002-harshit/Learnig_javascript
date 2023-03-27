@@ -25,3 +25,19 @@ console.log(Person.prototype.__proto__ === Object.prototype); //* this is true i
 ```
 
 ![](../img/i3.png)
+
+Inheritance using ctr functions
+
+![](../img/i4.png)
+
+![](../img/i5.png)
+
+**this one is imp**
+
+![](../img/i6.png)
+
+<h1>its basically every ctr function has its corresponding prototypical object.!!!!!!!!!, which either inherits or gets inherited.</h1>
+
+Inheritance among Object.create()
+
+![](../img/i7.png)
